@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3DB2DF37-8FD4-4357-80C2-E5AAE1ED6E37}</ProjectGuid>
+    <ProjectGuid>{4EAAF281-29E6-47A4-A5D1-9E71BF67571D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.KomanichRM.Sprint2.Task1.V23.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.KomanichRM.Sprint2.Task1.V23.Lib</AssemblyName>
+    <RootNamespace>Tyuiu.KomanichRM.Sprint2.Task3.V18.Lib</RootNamespace>
+    <AssemblyName>Tyuiu.KomanichRM.Sprint2.Task3.V18.Lib</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -39,8 +39,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="tyuiu.cources.programming.interfaces, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="tyuiu.cources.programming.interfaces">
       <HintPath>..\DLL\tyuiu.cources.programming.interfaces.dll</HintPath>
     </Reference>
   </ItemGroup>
