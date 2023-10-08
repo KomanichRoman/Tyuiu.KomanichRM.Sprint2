@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.KomanichRM.Sprint2.Task2.V6.Lib;
+using Tyuiu.KomanichRM.Sprint2.Task4.V24.Lib;
 
-namespace Tyuiu.KomanichRM.Sprint2.Task2.V6
+namespace Tyuiu.KomanichRM.Sprint2.Task4.V24
 {
     class Program
     {
@@ -16,35 +16,33 @@ namespace Tyuiu.KomanichRM.Sprint2.Task2.V6
             Console.Title = "Спринт #2 | Выполнил: Команич Р. М. | АСОиУб-23-3";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #2                                                               *");
-            Console.WriteLine("* Тема: Оператор if                                                       *");
-            Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #6                                                              *");
+            Console.WriteLine("* Тема: Тернарный оператор                                                *");
+            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Вариант #24                                                             *");
             Console.WriteLine("* Выполнил: Команич Роман Маркович | АСОиУб-23-3                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с             *");
-            Console.WriteLine("* клавиатуры и вычисляет находится ли точка с координатами X,Y            *");
-            Console.WriteLine("* в заштрихованной области.                                               *");
+            Console.WriteLine("* Написать программу, которая вычисляет требуемое значение с              *");
+            Console.WriteLine("* использованием тернарного оператора, где пользователь вводит значение   *");
+            Console.WriteLine("* переменных x,y, с клавиатуры                                            *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            
-            int x = Convert.ToInt32(Console.ReadLine());
-            int y = Convert.ToInt32(Console.ReadLine());
-            bool res = ds.CheckDotInShadedArea(x, y);
+
+            Console.WriteLine("Введите значение переменной X: ");
+            double x = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите значение переменной Y: ");
+            double y = Convert.ToDouble(Console.ReadLine());
+
+            double res = ds.Calculate(x, y);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            if (res)
-            {
-                Console.WriteLine("Точка находиться в заштрихованной области");
-            }
-            else
-            {
-                Console.WriteLine("Точка не находиться в заштрихованной области");
-            }
+            Console.WriteLine("Значение функции = " + res);
+            Console.ReadKey();
+
         }
     }
 }

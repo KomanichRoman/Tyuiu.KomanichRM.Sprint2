@@ -22,21 +22,22 @@ namespace Tyuiu.KomanichRM.Sprint2.Task2.V6
             Console.WriteLine("* Выполнил: Команич Роман Маркович | АСОиУб-23-3                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с             *");
-            Console.WriteLine("* клавиатуры и вычисляет находится ли точка с координатами X,Y            *");
-            Console.WriteLine("* в заштрихованной области.                                               *");
+            Console.WriteLine("* Написать программу на, которая запрашивает целые значения с клавиатуры  *");
+            Console.WriteLine("* и вычисляет находится ли точка с координатами X,Y                       *");
+            Console.WriteLine("*  в заштрихованной области.                                              *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            
+
             int x = Convert.ToInt32(Console.ReadLine());
             int y = Convert.ToInt32(Console.ReadLine());
-            bool res = ds.CheckDotInShadedArea(x, y);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
+
+            bool res = ds.CheckDotInShadedArea(x, y);
             if (res)
             {
                 Console.WriteLine("Точка находиться в заштрихованной области");
@@ -45,6 +46,7 @@ namespace Tyuiu.KomanichRM.Sprint2.Task2.V6
             {
                 Console.WriteLine("Точка не находиться в заштрихованной области");
             }
+            Console.ReadKey();
         }
     }
 }

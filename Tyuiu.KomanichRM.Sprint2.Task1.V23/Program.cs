@@ -12,7 +12,6 @@ namespace Tyuiu.KomanichRM.Sprint2.Task1.V23
         static void Main(string[] args)
         {
             DataService ds = new DataService();
-            // Task1
             int a = 242;
             int b = 571;
             int c = 325;
