@@ -13,8 +13,6 @@ namespace Tyuiu.KomanichRM.Sprint2.Task0.V27.Lib
         {
             bool[] res = new bool[6];
 
-            // x = 1305
-            // y = 275
             res[0] = x - 1030 == y;
             res[1] = x != y + 1030;
             res[2] = x - 1031 < y;
